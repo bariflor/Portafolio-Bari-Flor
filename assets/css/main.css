@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Raleway', sans-serif; }
+
+/*===============================
+=       section #1 Nav bar            =
+===============================*/
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: transparent !important;
+  z-index: 10;
+  transition: all 1s ease; }
+  .navbar h1 {
+    color: white; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+  padding: 10px;
+  font-size: 18px;
+  width: 120px;
+  position: relative;
+  left: 100px; }
+
+/*===============================
+=       section #2 portada            =
+===============================*/
+#section-2-portada {
+  background-image: url("../img/fondo-negro.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #section-2-portada #portada-container {
+    width: 30%;
+    height: 200px;
+    position: relative;
+    top: 35%;
+    text-align: center;
+    padding: 25px;
+    color: pink;
+    border-radius: 5%; }
+
+/*===============================
+=            section #3-about            =
+===============================*/
+#section-3-about {
+  background-color: #61C0C9;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  color: white;
+  padding: 15px; }
+  #section-3-about hr {
+    border: 2px solid white; }
+  #section-3-about .container {
+    width: 70%;
+    height: auto;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    padding: 25px; }
+    #section-3-about .container p {
+      text-align: justify;
+      font-size: 20px;
+      font-family: 'Raleway', sans-serif; }
+    #section-3-about .container img.img-fluid {
+      width: 200px !important;
+      height: 200px !important;
+      border: 2px solid white;
+      border-radius: 50%; }
+    #section-3-about .container li {
+      list-style: none; }
+
+/*===============================
+=            section #4 - skills  =
+===============================*/
+#section-4-skills {
+  background: linear-gradient(50deg, #FF4169 0, #1E9DAC 100%);
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  color: white;
+  padding: 15px; }
+  #section-4-skills .container {
+    width: 70%;
+    height: auto;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    padding: 25px; }
+
+/*===============================
+=            section #5 - Portafolio  =
+===============================*/
+#portafolio {
+  background-color: #323232;
+  padding: 100px;
+  height: auto;
+  color: black; }
+  #portafolio h1 {
+    text-align: center;
+    color: white; }
+  #portafolio img {
+    width: 285px;
+    height: 200px;
+    border: 5px solid #1e1e1e; }
+
+/*=============================================
+=            Section #6 contacto            =
+=============================================*/
+#contact-us {
+  background-image: url(https://promenadethemes.com/demo/winsome/onepage/wp-content/uploads/sites/2/2017/03/office-space-1744803_1920.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 630px; }
+  #contact-us .row {
+    background-color: rgba(136, 136, 136, 0.5); }
+  #contact-us h1 {
+    padding: 40px;
+    text-align: center; }
+  #contact-us li {
+    list-style: none;
+    border-bottom: 2px solid white; }
+
+/*===============================
+=            section #6 - footer  =
+===============================*/
+#colophon {
+  background-color: #080404;
+  border-top: 1px solid #111;
+  clear: both;
+  color: #ffffff;
+  padding: 15px 0;
+  text-align: center; }
+
+/*===================================
+=            media Query            =
+===================================*/
+@media (max-width: 600px) {
+  #portada {
+    height: 520px; }
+
+  #portada-container {
+    width: 80%;
+    position: absolute;
+    left: 40px; }
+
+  #section-2 {
+    height: 595px; }
+    #section-2 p {
+      text-align: justify;
+      font-size: 12px !important;
+      color: pink;
+      font-family: 'Kurale', serif; } }
+
+/*# sourceMappingURL=main.css.map */
