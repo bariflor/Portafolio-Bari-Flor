@@ -2,7 +2,11 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Kurale', serif;
+  box-sizing: content-box; }
+
+hr {
+  border: 2px solid white; }
 
 /*===============================
 =       section #1 Nav bar            =
@@ -21,23 +25,23 @@ body {
   color: white !important;
   padding: 10px;
   font-size: 18px;
-  width: 120px;
-  position: relative;
-  left: 100px; }
+  width: 120px; }
 
 /*===============================
 =       section #2 portada            =
 ===============================*/
 #section-2-portada {
-  background-image: url("../img/fondo-negro.jpg");
-  background-size: cover;
+  background-image: url("../img/student.jpg");
   width: 100%;
-  height: 700px;
+  height: 680px;
   min-height: 500px;
   background-attachment: fixed;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover; }
+  #section-2-portada #fondo {
+    width: 100%;
+    background: rgba(91, 0, 49, 0.5); }
   #section-2-portada #portada-container {
     width: 30%;
     height: 200px;
@@ -52,56 +56,83 @@ body {
 =            section #3-about            =
 ===============================*/
 #section-3-about {
-  background-color: #61C0C9;
-  background-size: cover;
+  background: #d9a7c7;
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   width: 100%;
   height: 700px;
-  color: white;
   padding: 15px; }
-  #section-3-about hr {
-    border: 2px solid white; }
-  #section-3-about .container {
-    width: 70%;
-    height: auto;
+  #section-3-about #texto {
+    height: 400px; }
+  #section-3-about h1 {
     position: relative;
-    top: 5%;
-    text-align: center;
-    padding: 25px; }
-    #section-3-about .container p {
-      text-align: justify;
-      font-size: 20px;
-      font-family: 'Raleway', sans-serif; }
-    #section-3-about .container img.img-fluid {
-      width: 200px !important;
-      height: 200px !important;
-      border: 2px solid white;
-      border-radius: 50%; }
-    #section-3-about .container li {
-      list-style: none; }
+    top: 250px; }
+  #section-3-about #about-texto {
+    position: relative;
+    top: 100px; }
+  #section-3-about #about-bari {
+    position: relative;
+    top: 100px; }
+  #section-3-about #iconos {
+    width: 400px; }
+  #section-3-about button {
+    position: relative;
+    top: 150px;
+    left: 190px; }
 
 /*===============================
 =            section #4 - skills  =
 ===============================*/
 #section-4-skills {
-  background: linear-gradient(50deg, #FF4169 0, #1E9DAC 100%);
-  background-size: cover;
-  width: 100%;
-  height: 700px;
   color: white;
-  padding: 15px; }
-  #section-4-skills .container {
-    width: 70%;
-    height: auto;
+  background: #BA5370;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F4E2D8, #BA5370);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F4E2D8, #BA5370);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 700px !important; }
+  #section-4-skills .row {
+    height: 500px; }
+  #section-4-skills h1 {
     position: relative;
-    top: 5%;
-    text-align: center;
-    padding: 25px; }
+    top: 550px; }
+  #section-4-skills #skills-bari {
+    height: 700px;
+    background-image: url(../img/skill-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+  #section-4-skills #skill-progress {
+    position: relative;
+    top: 100px; }
+
+.parallax {
+  background-image: url(../img/mari.jpg);
+  height: 400px;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: contrast(10%);
+  filter: contrast(90%); }
+  .parallax h2 {
+    padding: 20px;
+    font-family: 'Calligraffitti', cursive; }
 
 /*===============================
 =            section #5 - Portafolio  =
 ===============================*/
 #portafolio {
-  background-color: #323232;
+  background: #D3CCE3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 100px;
   height: auto;
   color: black; }
@@ -110,27 +141,29 @@ body {
     color: white; }
   #portafolio img {
     width: 285px;
-    height: 200px;
-    border: 5px solid #1e1e1e; }
+    height: 200px; }
 
 /*=============================================
 =            Section #6 contacto            =
 =============================================*/
 #contact-us {
-  background-image: url(https://promenadethemes.com/demo/winsome/onepage/wp-content/uploads/sites/2/2017/03/office-space-1744803_1920.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 630px; }
-  #contact-us .row {
-    background-color: rgba(136, 136, 136, 0.5); }
+  background-color: #444444;
+  height: 200px; }
   #contact-us h1 {
     padding: 40px;
     text-align: center; }
-  #contact-us li {
-    list-style: none;
-    border-bottom: 2px solid white; }
+  #contact-us p {
+    position: relative;
+    top: 50px;
+    width: 70%;
+    color: white;
+    text-align: center; }
+  #contact-us .icon-phone, #contact-us .icon-mail, #contact-us .icon-location, #contact-us .icon-check_circle {
+    font-size: 80px;
+    color: white;
+    position: relative;
+    top: 50px;
+    left: 80px; }
 
 /*===============================
 =            section #6 - footer  =
@@ -148,19 +181,50 @@ body {
 ===================================*/
 @media (max-width: 600px) {
   #portada {
-    height: 520px; }
+    height: 820px !important; }
 
   #portada-container {
-    width: 80%;
+    width: 300px !important;
     position: absolute;
     left: 40px; }
 
-  #section-2 {
-    height: 595px; }
-    #section-2 p {
+  #section-3-about {
+    height: 850px; }
+    #section-3-about h1 {
+      position: static !important;
+      text-align: center;
+      font-family: 'Kurale', serif; }
+    #section-3-about p {
+      position: relative !important;
+      bottom: 50px;
       text-align: justify;
-      font-size: 12px !important;
-      color: pink;
-      font-family: 'Kurale', serif; } }
+      font-size: 15px !important;
+      font-family: 'Kurale', serif; }
+    #section-3-about #carouselExampleSlidesOnly {
+      width: 250px;
+      position: relative !important;
+      left: 70px;
+      border: 15px solid white; }
+
+  #section-4-skills {
+    height: 1200px !important; }
+    #section-4-skills h1 {
+      text-align: center;
+      position: relative !important;
+      width: 100px;
+      top: 36%;
+      left: 43%; }
+    #section-4-skills #skills-bari {
+      display: none; }
+
+  #contact-us {
+    height: 50%; }
+    #contact-us p {
+      position: static;
+      width: 30% !important; }
+    #contact-us .icon-phone, #contact-us .icon-mail, #contact-us .icon-location, #contact-us .icon-check_circle {
+      font-size: 40px !important;
+      color: white;
+      position: static; } }
 
 /*# sourceMappingURL=main.css.map */
